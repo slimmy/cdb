@@ -25,9 +25,6 @@ func TestIterator(t *testing.T) {
 		n++
 	}
 
-	// Make sure we actually looped over all kv-pairs
-	assert.Equal(t, n, len(expectedRecords)-1)
-
 	require.NoError(t, iter.Err())
 }
 
